@@ -621,3 +621,141 @@ header .container {
   line-height: calc(20 / 16); /* 125% */
   letter-spacing: 0.48px;
 }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-close-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border: 1px solid #d6cdf8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../images/close-icon.svg);
+  background-size: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 480px;
+  min-height: 584px;
+  background-color: #fcfcfc;
+
+  padding: 24px;
+  font-family: "Roboto", sans-serif;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 17px; */
+}
+.modal-title {
+  color: #023688;
+  text-align: center;
+  font-family: inherit;
+  font-size: 20px;
+
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: 0.6px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.modal-label {
+  color: #757575;
+  font-family: inherit;
+  font-size: 12px;
+
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: 0.12px;
+  padding: 0;
+  margin: 0;
+}
+.modal-input,
+.modal-textarea {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.modal-input:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.modal-textarea {
+  height: 120px;
+  resize: none;
+  margin-bottom: 16px;
+}
+
+.checkbox-wrap {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 24px;
+  gap: 8px;
+}
+.modal-checkbox {
+  display: inline-block;
+}
+
+.checkbox-label {
+  color: #8e8f99;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: calc(14 / 12); /* 116.667% */
+  letter-spacing: 0.48px;
+}
+
+.checkbox-label a {
+  color: #023688;
+  text-decoration: underline;
+}
+
+.modal-btn {
+  width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: #023688;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 16px 32px;
+
+  text-transform: uppercase;
+  color: #ffff;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: #fff;
+  text-align: center;
+
+  /* Button Text */
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(24 / 16); /* 150% */
+  letter-spacing: 0.64px;
+}
