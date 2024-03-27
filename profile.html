@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProSport</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" data-href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/profile.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu">
+                <a href="./index.html" class="logo">
+                   <img src="./images/logo-icon.svg" class="logo-icon">
+                </a>
+                <nav class="menu-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="./index.html" class="nav-link">Головна</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Програми</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Тренер</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Абонементи</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Запис</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Контакти</a></li>
+                    </ul>
+                </nav>
+    
+         <div class="drop-down-wrap">
+                    <button type="button" class="btn-person">
+                        <svg width="25" height="25" class="btn-person-icon"><use href="./images/symbol-defs.svg#icon-person"></use></svg>
+                        <svg width="18" height="11" class="btn-person-icon"><use href="./images/symbol-defs.svg#icon-arrow"></use></svg>
+                    </button>
+                
+                        <ul class="drop-down-list">
+                            <li class="drop-down-item"><a href="./profile.html">Особисті дані</a></li>
+                            <li class="drop-down-item"><a href="">Абонементи та послуги</a></li>
+                            <li class="drop-down-item"><a href="">Розклад тренувань</a></li>
+                            <li class="drop-down-item"><a href="">Історія тренувань</a></li>
+                            <li class="drop-down-item"><a href="">Налаштування облікового запису</a></li>
+                            <li class="drop-down-item"><a href="">Підтримка та зв'язок:</a></li>
+                            <li class="drop-down-item">
+                               
+                                    <svg class="icon-log-out">
+                                        <use href="./images/symbol-defs.svg#icon-sign-out"></use>
+                                    </svg>
+                                    <a href="./index.html">Вихід</a>
+                                
+                            </li>
+                        </ul>
+                   
+         </div>
+                
+                
+            </div>
+            
+            <input type="checkbox" value="on" class="input-chek">
+
+        </div>
+    </header>
+    <main>
+       <section class="profile">
+           <div class="container ">
+                <h2 class="profile-title">Профіль</h2>
+                <div class="profile-container">
+                   
+                        <ul>
+                            <li class="profile-setting-item" >
+                                <a href="#" class="profile-setting-link personal-data">Особисті дані</a>
+                                <div class="profile-wrap">
+                                        <div class="personal-profile-info">
+                                                <div class="profile-picture">
+                                                </div>
+                                
+                                                <div class="profile-info">
+                                                    <h2>Ім'я та Прізвище</h2>
+                                                    <p>Email: example@example.com</p>
+                                                    <p>Дата народження: 01.01.1990</p>
+                                                    <p>Кількість балів: 20</p>
+                                                </div>
+                                        </div>
+                    
+                                        <div class="personal-profile-info">
+                                            <div class="point-title">Що це за очки досвіду та бали?</div>
+                                            
+                                            <ul class="point-list">
+                                                <li class="point-item">
+                                                    <svg class="point-icon" width="25"height="25">
+                                                        <use href="./images/symbol-defs.svg#icon-heart"></use>
+                                                    </svg>
+                                                    <p>У клубі PROSport ми прагнемо забезпечити мотивацію наших членів не лише ефективним тренуванням, але й цікавими бонусами.</p>
+                                                </li>
+                    
+                                                <li class="point-item">
+                                                    <svg class="point-icon">
+                                                        <use href="./images/symbol-defs.svg#icon-graph"></use>
+                                                    </svg>
+                                                    <p>Для цього ми впровадили очки досвіду та бали, які є вимірювачами вашого  прогресу, отриманого в процесі тренувань.</p>
+                                                </li>
+                    
+                                                <li class="point-item">
+                                                    <svg class="point-icon">
+                                                        <use href="./images/symbol-defs.svg#icon-trophy"></use>
+                                                    </svg>
+                                                    <p>Ми нараховуємо очки досвіду лише за дії, пов'язані з вашими тренуваннями.</p>
+                                                </li>
+                    
+                                            </ul>
+                                        </div>
+                                </div>
+                            </li>
+
+
+                            <li class="profile-setting-item">
+                                <a href="#" class="profile-setting-link setting">Налаштування</a>
+                                <div class="profile-wrap">
+                    
+                                        <div class="personal-profile-info">
+                                            <div class="point-title">Налаштування мови</div>
+                                            <div class="language-setting">
+                                                <label for="select" class="select-label">Оберіть мову</label>
+                                                <select name="lang" id="select" class="select-lang">
+                                                    <option value="ukr" class="option-lang">Українська</option>
+                                                    <option value="eng"class="option-lang">English</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </li>
+                            
+                            <li class="profile-setting-item">
+                                <a href="#" class="profile-setting-link">Конфедеційність</a>
+                                <div class="profile-wrap">
+
+                                    <div class="personal-profile-info confidentiality">
+                                        <div class="confidentiality-wrap">
+                                            <div class="point-title">Умови використання і політика конфіденційності</div>
+                                            <div><a>Умови використання</a></div>
+                                        </div>
+                                        <div class="confidentiality-wrap">
+                                            <div class="point-title">Конфіденційність</div>
+                                            <div><a>Політика конфіденційності</a></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="personal-profile-info delete ">
+                                        <div class="point-title">Управління аккаунтом</div>
+                                        <div><a>Видалити</a></div>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                </div>
+           </div>
+       </section>
+    
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="" class="footer-logo-link"> 
+                   <img src="./images/logo-icon.svg" class="logo-icon"> PROSport
+                </a>
+            <div class="footer-wrap">
+                <input type="email" placeholder="Email" class="footer-input" required>
+                <button type="button" class="footer-input-btn">Підписатися</button>
+            </div>
+        </div>
+    </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Отримуємо посилання "Налаштування"
+    var settingsLink = document.querySelector(".profile-setting-link.setting");
+
+    // Отримуємо випадаючий список
+    var selectLang = document.getElementById("select");
+
+    // Додаємо обробник події mousedown до випадаючого списку
+    selectLang.addEventListener("mousedown", function() {
+        // Встановлюємо фокус на посиланні "Налаштування" після зміни мови
+        settingsLink.focus();
+    });
+});
+</script>
+</body>
+</html>

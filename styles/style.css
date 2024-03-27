@@ -50,7 +50,7 @@ ul {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: calc(24 / 16);
   letter-spacing: normal;
   background: var(--bg-light-theme);
 }
@@ -181,20 +181,87 @@ header .container {
   left: 50%;
   transform: translateX(-50%);
 }
-
-.btn-person {
+/* --------------------drop-down-menu------------------------- */
+.drop-down-wrap {
+  position: relative;
   margin-left: auto;
+  /* width: 100%; */
+}
+.btn-person {
   margin-right: 91px;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  transform: translateY(-8px);
+  transform: translate(100%, -27%);
 }
-
 .btn-person-icon {
   fill: #0b395b;
 }
 
+.btn-person:focus + .drop-down-list {
+  opacity: 1;
+}
+
+.drop-down-list {
+  position: absolute;
+  top: 0;
+  left: 55px;
+  width: 300px;
+
+  transform: translateY(10%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+.drop-down-item {
+  background-color: #0b395b;
+
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: left;
+
+  border-bottom: 1px solid #999999;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+.drop-down-item a {
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: 0.52px;
+  color: inherit;
+
+  color: #fff;
+}
+
+.drop-down-item:is(:hover, :focus) {
+  background-color: var(--dark-bg-blue);
+}
+
+.drop-down-item:last-child {
+  background-color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.drop-down-item:last-child:is(:hover, :focus) {
+  background-color: var(--hover-accent-color);
+}
+
+.icon-log-out {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+
+  fill: #ffffff;
+}
 .input-chek {
   position: absolute;
   left: calc(100% + 57px);
@@ -460,7 +527,6 @@ header .container {
 .address {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
