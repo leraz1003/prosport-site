@@ -27,14 +27,23 @@
                 </a>
                 <nav class="menu-nav">
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="./index.html" class="nav-link">Головна</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Програми</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Тренер</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Абонементи</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Запис</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Контакти</a></li>
+                        <li class="nav-item"><a href="./index.html" class="nav-link" data-language-key="main">Головна</a></li>
+                        <li class="nav-item"><a href="./programs.html" class="nav-link" data-language-key="program_page">Програми</a></li>
+                        <li class="nav-item"><a href="./trainers.html" class="nav-link"data-language-key="trainers_page">Тренер</a></li>
+                        <li class="nav-item"><a href="./abonement.html" class="nav-link"data-language-key="abonement_page">Абонементи</a></li>
+                        <li class="nav-item"><a href="./registration.html" class="nav-link"data-language-key="registration_page">Запис</a></li>
+                        <li class="nav-item"><a href="./contacts.html" class="nav-link "data-language-key="contacts_page">Контакти</a></li>
                     </ul>
+
+                
                 </nav>
+                <input type="checkbox" value="on" class="input-chek visually-hidden " id="checkbox">
+                <label for="checkbox" class="theme-label">
+                    <span class="input-chek-logo">
+                        <span class="circle-check"></span>
+                    </span>
+                    
+                </label>
     
          <div class="drop-down-wrap">
                     <button type="button" class="btn-person">
@@ -43,18 +52,18 @@
                     </button>
                 
                         <ul class="drop-down-list">
-                            <li class="drop-down-item"><a href="./profile.html">Особисті дані</a></li>
-                            <li class="drop-down-item"><a href="">Абонементи та послуги</a></li>
-                            <li class="drop-down-item"><a href="">Розклад тренувань</a></li>
-                            <li class="drop-down-item"><a href="">Історія тренувань</a></li>
-                            <li class="drop-down-item"><a href="">Налаштування облікового запису</a></li>
-                            <li class="drop-down-item"><a href="">Підтримка та зв'язок:</a></li>
+                            <li class="drop-down-item"><a href="./profile.html" class="personal-data" data-language-key="personal_data">Особисті дані</a></li>
+                            <li class="drop-down-item"><a href="./abonement.html" class="abonement" data-language-key="abonement">Абонементи та послуги</a></li>
+                            <li class="drop-down-item"><a href="./contacts.html" class="schedule" data-language-key="schedule">Розклад тренувань</a></li>
+                            <li class="drop-down-item"><a href="" class="history" data-language-key="history">Історія тренувань</a></li>
+                            <li class="drop-down-item"><a href="" class="setting" data-language-key="setting">Налаштування облікового запису</a></li>
+                            <li class="drop-down-item"><a href="" class="support" data-language-key="support">Підтримка та зв'язок</a></li>
                             <li class="drop-down-item">
                                
                                     <svg class="icon-log-out">
                                         <use href="./images/symbol-defs.svg#icon-sign-out"></use>
                                     </svg>
-                                    <a href="./index.html">Вихід</a>
+                                    <a href="./index.html"  data-language-key="exit">Вихід</a>
                                 
                             </li>
                         </ul>
@@ -64,55 +73,55 @@
                 
             </div>
             
-            <input type="checkbox" value="on" class="input-chek">
+            
 
         </div>
     </header>
     <main>
        <section class="profile">
            <div class="container ">
-                <h2 class="profile-title">Профіль</h2>
+                <h2 class="profile-title" data-language-key="profile">Профіль</h2>
                 <div class="profile-container">
                    
                         <ul>
                             <li class="profile-setting-item" >
-                                <a href="#" class="profile-setting-link personal-data">Особисті дані</a>
+                                <a href="#" class="profile-setting-link" data-language-key="personal_data">Особисті дані</a>
                                 <div class="profile-wrap">
                                         <div class="personal-profile-info">
                                                 <div class="profile-picture">
                                                 </div>
                                 
                                                 <div class="profile-info">
-                                                    <h2>Ім'я та Прізвище</h2>
-                                                    <p>Email: example@example.com</p>
-                                                    <p>Дата народження: 01.01.1990</p>
-                                                    <p>Кількість балів: 20</p>
+                                                    <h2 data-language-key="name_surname">Ім'я та Прізвище</h2>
+                                                    <p data-language-key="email">Email: example@example.com</p>
+                                                    <p data-language-key="birth_date">Дата народження: 01.01.1990</p>
+                                                    <p data-language-key="points">Кількість балів: 20</p>
                                                 </div>
                                         </div>
                     
                                         <div class="personal-profile-info">
-                                            <div class="point-title">Що це за очки досвіду та бали?</div>
+                                            <div class="point-title" data-language-key="experience_points">Що це за очки досвіду та бали?</div>
                                             
                                             <ul class="point-list">
                                                 <li class="point-item">
                                                     <svg class="point-icon" width="25"height="25">
                                                         <use href="./images/symbol-defs.svg#icon-heart"></use>
                                                     </svg>
-                                                    <p>У клубі PROSport ми прагнемо забезпечити мотивацію наших членів не лише ефективним тренуванням, але й цікавими бонусами.</p>
+                                                    <p data-language-key="points_explanation_1">У клубі PROSport ми прагнемо забезпечити мотивацію наших членів не лише ефективним тренуванням, але й цікавими бонусами.</p>
                                                 </li>
                     
                                                 <li class="point-item">
                                                     <svg class="point-icon">
                                                         <use href="./images/symbol-defs.svg#icon-graph"></use>
                                                     </svg>
-                                                    <p>Для цього ми впровадили очки досвіду та бали, які є вимірювачами вашого  прогресу, отриманого в процесі тренувань.</p>
+                                                    <p data-language-key="points_explanation_2">Для цього ми впровадили очки досвіду та бали, які є вимірювачами вашого  прогресу, отриманого в процесі тренувань.</p>
                                                 </li>
                     
                                                 <li class="point-item">
                                                     <svg class="point-icon">
                                                         <use href="./images/symbol-defs.svg#icon-trophy"></use>
                                                     </svg>
-                                                    <p>Ми нараховуємо очки досвіду лише за дії, пов'язані з вашими тренуваннями.</p>
+                                                    <p data-language-key="points_explanation_3">Ми нараховуємо очки досвіду лише за дії, пов'язані з вашими тренуваннями.</p>
                                                 </li>
                     
                                             </ul>
@@ -122,17 +131,18 @@
 
 
                             <li class="profile-setting-item">
-                                <a href="#" class="profile-setting-link setting">Налаштування</a>
+                                <a href="#" class="profile-setting-link setting" data-language-key="setting">Налаштування</a>
                                 <div class="profile-wrap">
                     
                                         <div class="personal-profile-info">
-                                            <div class="point-title">Налаштування мови</div>
+                                            <div class="point-title" data-language-key="setting_language">Налаштування мови</div>
                                             <div class="language-setting">
-                                                <label for="select" class="select-label">Оберіть мову</label>
-                                                <select name="lang" id="select" class="select-lang">
-                                                    <option value="ukr" class="option-lang">Українська</option>
-                                                    <option value="eng"class="option-lang">English</option>
+                                                <label for="select" class="select-label"data-language-key="change_lang">Оберіть мову</label>
+                                               <select name="lang" id="select" class="select-lang">
+                                                    <option value="ukrainian" class="option-lang"><a href="#" class="lang-opt" language="ukrainian">Українська</a></option>
+                                                    <option value="english" class="option-lang"><a href="" class="lang-opt" language="english">English</a></option>
                                                 </select>
+
                                             </div>
                                         </div>
 
@@ -140,23 +150,23 @@
                             </li>
                             
                             <li class="profile-setting-item">
-                                <a href="#" class="profile-setting-link">Конфедеційність</a>
+                                <a href="#" class="profile-setting-link" data-language-key="confidentiality">Конфедеційність</a>
                                 <div class="profile-wrap">
 
                                     <div class="personal-profile-info confidentiality">
                                         <div class="confidentiality-wrap">
-                                            <div class="point-title">Умови використання і політика конфіденційності</div>
-                                            <div><a>Умови використання</a></div>
+                                            <div class="point-title"  data-language-key="terms_of_use_policy">Умови використання і політика конфіденційності</div>
+                                            <div><a data-language-key="terms_of_use">Умови використання</a></div>
                                         </div>
                                         <div class="confidentiality-wrap">
-                                            <div class="point-title">Конфіденційність</div>
-                                            <div><a>Політика конфіденційності</a></div>
+                                            <div class="point-title"  data-language-key="confidentiality">Конфіденційність</div>
+                                            <div><a data-language-key="privacy_policy">Політика конфіденційності</a></div>
                                         </div>
                                     </div>
 
                                     <div class="personal-profile-info delete ">
-                                        <div class="point-title">Управління аккаунтом</div>
-                                        <div><a>Видалити</a></div>
+                                        <div class="point-title" data-language-key="manage_account">Управління аккаунтом</div>
+                                        <div><a  data-language-key="delete">Видалити</a></div>
                                     </div>
 
                                 </div>
@@ -169,31 +179,8 @@
     
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <a href="" class="footer-logo-link"> 
-                   <img src="./images/logo-icon.svg" class="logo-icon"> PROSport
-                </a>
-            <div class="footer-wrap">
-                <input type="email" placeholder="Email" class="footer-input" required>
-                <button type="button" class="footer-input-btn">Підписатися</button>
-            </div>
-        </div>
-    </footer>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    // Отримуємо посилання "Налаштування"
-    var settingsLink = document.querySelector(".profile-setting-link.setting");
-
-    // Отримуємо випадаючий список
-    var selectLang = document.getElementById("select");
-
-    // Додаємо обробник події mousedown до випадаючого списку
-    selectLang.addEventListener("mousedown", function() {
-        // Встановлюємо фокус на посиланні "Налаштування" після зміни мови
-        settingsLink.focus();
-    });
-});
-</script>
+<script src="./js/lang.js"></script>
 </body>
+
+
 </html>
