@@ -283,10 +283,6 @@ header .container {
   fill: var(--font-color);
 }
 
-.btn-person:focus + .drop-down-list {
-  opacity: 1;
-}
-
 .drop-down-list {
   position: absolute;
   top: 8px;
@@ -300,6 +296,7 @@ header .container {
   justify-content: flex-start;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   opacity: 0;
+  /* display: none; */
 }
 .drop-down-item {
   background-color: #022254;
@@ -310,8 +307,6 @@ header .container {
 
   border-bottom: 1px solid #999999;
   border-radius: 5px;
-
-  cursor: pointer;
 }
 .drop-down-item a {
   display: inline-block;
@@ -323,6 +318,12 @@ header .container {
   color: inherit;
 
   color: #fff;
+}
+.btn-person:focus + .drop-down-list {
+  opacity: 1;
+  /* display: flex; */
+  z-index: 2;
+  cursor: pointer;
 }
 
 .drop-down-item:is(:hover, :focus) {
@@ -346,12 +347,6 @@ header .container {
   height: 30px;
 
   fill: #ffffff;
-}
-.input-chek {
-  position: absolute;
-  left: calc(100% + 57px);
-  top: 30px;
-  cursor: pointer;
 }
 
 /* --------------------hero----------------------- */

@@ -20,6 +20,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/trainers.css">
+
 </head>
 <body>
     <header>
@@ -30,9 +32,9 @@
                 </a>
                 <nav class="menu-nav">
                     <ul class="nav-list">
-                        <li class="nav-item active-page"><a href="./index.html" class="nav-link">Головна</a></li>
+                        <li class="nav-item"><a href="./index.html" class="nav-link">Головна</a></li>
                         <li class="nav-item"><a href="./programs.html" class="nav-link">Програми</a></li>
-                        <li class="nav-item"><a href="./trainers.html" class="nav-link">Тренер</a></li>
+                        <li class="nav-item  active-page"><a href="./trainers.html" class="nav-link">Тренер</a></li>
                         <li class="nav-item"><a href="./abonement.html" class="nav-link">Абонементи</a></li>
                         <li class="nav-item"><a href="./registration.html" class="nav-link">Запис</a></li>
                         <li class="nav-item"><a href="./contacts.html" class="nav-link">Контакти</a></li>
@@ -77,45 +79,45 @@
         <section class="trainers">
             <div class="container">
                 <div class="trainers-desc">
-                    <h3 class="trainers-desc-title trainers-text">Досягненння:</h3>
-                    <ul class="achievements">
-                        <li class="achievements-item trainers-text">Майстер спорту України з акробатичного <p>рок-н-ролу</p></li>
-                        <li class="achievements-item trainers-text">Кандидат у майстри спорту по спортивній аеробіці</li>
-                        <li class="achievements-item trainers-text trainers-text">Неоднарозова чемпіонка та призерка України</li>
-                        <li class="achievements-item trainers-text">Фіналістка чемпіонату Європи 2019</li>
-                        <li class="achievements-item trainers-text">Володарка кубку України 2018</li>
-                    </ul>
+    <h3 class="trainers-desc-title">Досягненння:</h3>
+    <ul class="achievements">
+        <li class="trainers-text">Майстер спорту України з акробатичного <p>рок-н-ролу</p></li>
+        <li class="trainers-text">Кандидат у майстри спорту по спортивній аеробіці</li>
+        <li class="trainers-text">Неоднарозова чемпіонка та призерка України</li>
+        <li class="trainers-text">Фіналістка чемпіонату Європи 2019</li>
+        <li class="trainers-text">Володарка кубку України 2018</li>
+    </ul>
 
-                    <h3 class="trainers-desc-title trainers-text">Освіта:</h3>
-                    <ul class="education">
-                        <li class="education-item trainers-text">КНУ імені Т.Г.Шевченка. Факультет радіофізики, електроніки та комп’ютерних систем.</li>
-                        <li class="education-item trainers-text">Національний університет фізичного виховання та спорту України. Фахівець з тренерської діяльності.</li>
-                    </ul>
+    <h3 class="trainers-desc-title">Освіта:</h3>
+    <ul class="education">
+        <li class="trainers-text">КНУ імені Т.Г.Шевченка. Факультет радіофізики, електроніки та комп’ютерних систем.</li>
+        <li class="trainers-text">Національний університет фізичного виховання та спорту України. Фахівець з тренерської діяльності.</li>
+    </ul>
 
-                </div>
+    <h3 class="trainers-desc-title">Стаж:</h3>
+    <ul class="experience">
+        <li class="trainers-text">5 років БДЮТ</li>
+        <li class="trainers-text">4 роки КНУ</li>
+    </ul>
+</div>
 
 
                 <div class="treiners-data">
-                    <h2 class="coah-title ">Тренер</h2>
-                    <div class="coach-photo-thumb">
-                        <img src="./images/coach-valeriia.jpg" class="coach-photo">
-                    </div>
-                    <div class="coach-data">
-                        <h3>Зубрицька Валерія Дмитрівна</h3>
-                        <p>10.03.1999</p>
-                    </div>
-                    
-                    <button type="button" class="switch-btn">
-                        <svg class="right-arrow-icon" >
-                            <use href="./images/symbol-defs.svg#icon-right_arrow"></use>
-                        </svg>
-                    </button>
-
-                </div>
-
-                
-
-
+    <h2 class="coach-title">Тренер</h2>
+    <div class="coach-photo-thumb">
+        <img src="./images/coach-valeriia.jpg" class="coach-photo">
+    </div>
+    <div class="coach-data">
+        <h3 class="coach-full-name">Зубрицька Валерія Дмитрівна</h3>
+        <p class="coach-birthday">10.03.1999</p>
+    </div>
+    
+    <button type="button" class="switch-btn" id="switchBtn">
+        <svg class="right-arrow-icon">
+            <use href="./images/symbol-defs.svg#icon-right_arrow"></use>
+        </svg>
+    </button>
+</div>
             </div>
         </section>
     </main>
@@ -130,5 +132,9 @@
             </div>
         </div>
     </footer>
+    <script>
+
+    </script>
+    <script src="./js/trainers.js"></script>
     </body>
 </html>
