@@ -1,11 +1,65 @@
 header {
   position: relative;
+  background-color: var(--section-color);
 }
 .registration {
-  padding: 50px;
+  padding: 35px 50px;
   background: linear-gradient(to bottom, #ffffff 0%, #fff7f6 100%);
 }
+.reg-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+.img-registration-thumb {
+}
+.img-registration {
+  width: 300px;
+  height: 480px;
+  display: block;
+}
+.registration-title {
+  color: var(--font-color);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.registration-form {
+  width: 30%;
+}
+.registration-label {
+  color: var(--profile-after-text);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: calc(14 / 12); /* 116.667% */
+  letter-spacing: 0.48px;
+}
+.registration-input,
+.select {
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 100%;
+  height: 40px;
+  padding: 8px 15px 8px 30px;
 
+  color: var(--font-color);
+  font-size: 16px;
+}
+.registration-input,
+.select {
+  margin-bottom: 15px;
+}
+.registration-input:not(:focus):not(:placeholder-shown):valid {
+  border-color: rgba(5, 191, 5, 0.697);
+}
+.registration-input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: rgba(191, 5, 5, 0.697);
+}
+.registration-input:focus {
+  outline: none;
+  border: 1px solid var(--font-color);
+}
 .select {
   -webkit-appearance: none; /* Для WebKit */
   -moz-appearance: none; /* Для Firefox */
@@ -13,12 +67,29 @@ header {
 
   background-image: url("../images/select_arrow_down.svg");
   background-repeat: no-repeat;
-  background-position: right 15px center;
-  background-size: contain;
+  background-position: right 20px center;
+  background-size: 15px;
   cursor: pointer;
 
   color: #00085d;
   padding: 5px 38px;
   background-color: #fff;
   position: relative;
+}
+.select:focus {
+  outline: none;
+  border: none;
+}
+.registration-btn {
+  background-color: var(--font-color);
+  min-width: 140px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }

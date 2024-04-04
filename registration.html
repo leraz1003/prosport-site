@@ -71,43 +71,54 @@
     <main>
         <section class="registration">
             <div class="container">
-                <form id="registration-form">
-                    <label for="first-name">Ім'я:</label><br>
-                    <input type="text" id="first-name" name="first-name" required><br><br>
-
-                    <label for="last-name">Прізвище:</label><br>
-                    <input type="text" id="last-name" name="last-name" required><br><br>
-
-                    <label for="phone-number">Номер телефону:</label><br>
-                    <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
-
-                    <label for="program">Бажаний напрямок програми:</label><br>
-                    <select id="program" name="program" required>
-                        <option value="" disabled selected>Виберіть напрямок</option>
-                        <option value="акробатика">Акробатика</option>
-                        <option value="акробатичний рок-н-рол">Акробатичний рок-н-рол</option>
-                        <option value="стретчинг">Стретчинг</option>
-                        <option value="сучасна хореографія">Сучасна хореографія</option>
-                    </select><br><br>
-
-                    <label for="subscription">Бажаний абонемент:</label><br>
-                    <select id="subscription" name="subscription" required>
-                        <option value="" disabled selected>Виберіть абонемент</option>
-                        <optgroup label="Персональні тренування">
-                            <option value="дитячі">Дитячі</option>
-                            <option value="дорослі">Дорослі</option>
-                        </optgroup>
-                        <optgroup label="Групові дорослі заняття">
-                            <option value="разове">Разове</option>
-                            <option value="місячний">Місячний</option>
-                        </optgroup>
-                        <optgroup label="Дитячі групові">
-                            <option value="разове">Разове</option>
-                        </optgroup>
-                    </select><br><br>
-
-                    <button type="submit" value="Записатися">Записатись</button>
-                </form>
+            
+                <div class="reg-thumb">
+                    <form id="registration-form" class="registration-form ">
+                        <h2 class="title registration-title">Реєстраційна форма</h2>
+                        <label for="first-name" class="registration-label" >Ім'я:</label>
+                        <input type="text" class="registration-input" id="first-name" name="first-name" pattern="^[А-ЩЬЮЯҐЄІЇа-щьюяґєіїA-Za-z']+$" title="Ім'я може містити лише літери ukr/eng" placeholder=" " required>
+    
+                        <label for="last-name" class="registration-label">Прізвище:</label>
+                        <input type="text" class="registration-input" id="last-name" name="last-name" pattern="^[А-ЩЬЮЯҐЄІЇа-щьюяґєіїA-Za-z']+$" title="Призвіще може містити лише літери ukr/eng" placeholder=" " required>
+    
+                        <label for="phone-number" class="registration-label">Номер телефону:</label>
+                        <input type="tel"  class="registration-input" id="phone-number" name="phone-number" pattern="^[0-9+]+$" title="Номер не може містити пробіл та символи крім +" minlength="10" placeholder=" " required>
+    
+                        <label for="select-program" class="registration-label">Бажаний напрямок програми:
+                            <!-- <button type="button" class="select-icon-btn">
+                            <svg class="select-icon">
+                                <use href="./images/symbol-defs.svg#icon-select-arrow_down"></use>
+                            </svg>
+                            </button> -->
+                        </label>
+                        <select id="select-program" name="program" class="select" required>
+                            <option value="" disabled selected>Виберіть програму</option>
+                            <option value="acr">Акробатика</option>  
+                            <option value="acr r-n-r">Акробатичний рок-н-рол</option>
+                            <option value="str">Стретчинг</option>
+                            <option value="choreo">Сучасна хореографія</option>
+                        </select>
+    
+                        <label for="subscription" class="registration-label">Бажаний абонемент:</label>
+                        <select id="subscription" name="subscription" class="select" required >
+                            <option value="" disabled selected>Виберіть абонемент</option>
+                            <optgroup label="Персональні тренування">
+                                <option value="child_personal">Дитячі</option>
+                                <option value="adult_personal">Дорослі</option>
+                            </optgroup>
+                            <optgroup label="Групові дорослі заняття">
+                                <option value="adult_group_one">Разове</option>
+                                <option value="adult_group_month">Місячний абонемент</option>
+                            </optgroup>
+                            <optgroup label="Групові дитячі">
+                                <option value="child_group_month">Місячний абонемент</option>
+                            </optgroup>
+                        </select>
+    
+                        <button type="submit" class="registration-btn btn">Записатись</button>
+                    </form>
+                    <div class="img-registration-thumb"><img src="./images/logo-img.png" alt="" class="img-registration"></div>
+                </div>
             </div>
         </section>
     </main>
