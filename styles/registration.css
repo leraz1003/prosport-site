@@ -4,7 +4,7 @@ header {
 }
 .registration {
   padding: 35px 50px;
-  background: linear-gradient(to bottom, #ffffff 0%, #fff7f6 100%);
+  background: var(--pages-color);
 }
 .reg-thumb {
   display: flex;
@@ -70,7 +70,7 @@ header {
   background-size: 15px;
   cursor: pointer;
 
-  color: #00085d;
+  color: var(--font-color);
   padding: 5px 38px;
   background-color: #fff;
   position: relative;
@@ -91,4 +91,5 @@ header {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  color: var(--section-color);
 }

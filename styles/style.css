@@ -6,6 +6,7 @@
     #000d22 100%
   );
   --section-color: #ffff;
+  --pages-color: linear-gradient(to bottom, #ffffff 0%, #fff7f6 100%);
   --font-color: #022254;
   --accent-color: #ff3533;
   --hover-accent-color: #e10602;
@@ -26,6 +27,7 @@
     #000307 100%
   );
   --section-color: #022254;
+  --pages-color: #032d71;
   --font-color: #ffffff;
   --profile-after-text: rgba(224, 224, 250, 0.686);
   --profile-text: rgb(224, 224, 250);
@@ -43,6 +45,7 @@
       #000307 100%
     );
     --section-color: #022254;
+    --pages-color: #002869;
     --font-color: #ffffff;
     --profile-after-text: rgba(224, 224, 250, 0.686);
     --profile-text: rgb(224, 224, 250);

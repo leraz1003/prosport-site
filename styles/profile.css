@@ -10,7 +10,7 @@ header {
 }
 
 .profile {
-  background-color: var(--section-color);
+  background-color: var(--pages-color);
   padding: 31px;
 }
 
@@ -91,6 +91,10 @@ header {
 }
 .profile-info {
   text-align: left;
+}
+.profile-info h2,
+.profile-info p {
+  color: var(--profile-text);
 }
 
 .profile-setting-item:not(:last-child) {

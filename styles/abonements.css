@@ -3,7 +3,7 @@ header {
   background-color: var(--section-color);
 }
 .abonements {
-  background: linear-gradient(to bottom, #ffffff 0%, #fff7f6 100%);
+  background: var(--pages-color);
   padding: 27px 50px;
 }
 .abonement-title {

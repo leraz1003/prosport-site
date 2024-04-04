@@ -3,9 +3,9 @@ header {
   background-color: var(--section-color);
 }
 .programs {
-  padding: 15px 50px;
+  padding: 16px 50px;
   /* background-color: var(--section-color); */
-  background: linear-gradient(to bottom, #ffffff 0%, #fff7f6 100%);
+  background: var(--pages-color);
 }
 .programs-title {
   color: var(--font-color);
