@@ -1,0 +1,85 @@
+header {
+  position: inherit;
+  background-color: var(--section-color);
+}
+.contacts {
+  background: linear-gradient(to bottom, #ffffff 0%, #fff7f6 100%);
+  padding: 53px 50px;
+}
+
+.thumb {
+  width: 100%;
+  height: 130px;
+  background-color: rgb(236, 236, 236);
+  margin-bottom: 20px;
+}
+
+.contscts-wrap {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  margin-bottom: 20px;
+}
+.contact-info {
+  background-color: var(--section-color);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  width: 600px;
+  height: 150px;
+}
+.contact-info li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.contact-info li {
+  display: flex;
+  align-items: center;
+}
+.contacts-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  fill: var(--font-color);
+}
+.contact-info-link {
+  display: inline-block;
+  color: var(--font-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: normal;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.contact-map {
+  width: 100%;
+  height: 100%;
+}
+
+.google-map {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+.contact-soc-item {
+  display: inline-block;
+  color: rgb(194, 194, 194);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: normal;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.contact-soc-item:is(:focus, :hover) {
+  color: rgb(155, 155, 155);
+}
