@@ -102,6 +102,7 @@ header {
   cursor: pointer;
 }
 
-footer {
+.footer {
   background-color: #023688;
+  padding: 28px 0;
 }

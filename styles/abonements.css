@@ -1,0 +1,91 @@
+header {
+  position: relative;
+  background-color: var(--section-color);
+}
+.abonements {
+  background: linear-gradient(to bottom, #ffffff 0%, #fff7f6 100%);
+  padding: 50px;
+}
+.abonement-title {
+  color: var(--font-color);
+  font-size: 24px;
+  margin-bottom: 25px;
+  margin-bottom: 12px;
+}
+
+.abonemets-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.abonemets-item {
+  background-color: #bdbdbd;
+  padding: 4px;
+  border-radius: 0px 64px 0px 64px;
+  overflow: hidden;
+}
+.upper-thumb {
+  padding: 15px 10px;
+}
+.upper-thumb div {
+  border-radius: 0px 64px 0px 0px;
+  background-color: #d9d9d9;
+  width: 230px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-thumb {
+  background-color: #ffffff;
+  padding: 20px 10px;
+  width: 250px;
+  height: 255px;
+  border-radius: 0 0 0 64px;
+}
+.abon-title,
+.abon-info {
+  color: #023688;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+
+.abon-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #bdbdbd;
+  margin-bottom: 23px;
+  margin-top: 12px;
+}
+.abon-info {
+  font-size: 16px;
+  letter-spacing: 0.32px;
+}
+
+.abon-info:not(:last-child) {
+  margin-bottom: 17px;
+}
+.btn-abon {
+  width: 149.888px;
+  height: 34px;
+  border-radius: 5px;
+  background-color: #023688;
+
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
