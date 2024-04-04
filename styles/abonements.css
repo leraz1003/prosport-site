@@ -95,6 +95,13 @@ header {
   background-color: #022254;
   border: none;
 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.btn-abon a {
+  display: block;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -102,7 +109,5 @@ header {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.32px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
