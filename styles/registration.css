@@ -1,0 +1,24 @@
+header {
+  position: relative;
+}
+.registration {
+  padding: 50px;
+  background: linear-gradient(to bottom, #ffffff 0%, #fff7f6 100%);
+}
+
+.select {
+  -webkit-appearance: none; /* Для WebKit */
+  -moz-appearance: none; /* Для Firefox */
+  appearance: none;
+
+  background-image: url("../images/select_arrow_down.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: contain;
+  cursor: pointer;
+
+  color: #00085d;
+  padding: 5px 38px;
+  background-color: #fff;
+  position: relative;
+}
