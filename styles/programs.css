@@ -1,0 +1,48 @@
+header {
+  position: relative;
+  background-color: var(--section-color);
+}
+.programs {
+  padding: 16px 50px;
+  /* background-color: var(--section-color); */
+  background: var(--pages-color);
+}
+.programs-title {
+  color: var(--font-color);
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.programs-item {
+  padding: 10px 0;
+}
+.desc-text {
+  font-size: 24px;
+}
+.desc {
+  width: 255px;
+  background-color: rgb(239, 239, 239);
+}
+
+.img-thumb {
+  padding: 10px 15px;
+}
+.programs-list {
+  margin-bottom: 40px;
+}
+.programs-item {
+  border-radius: 0;
+}
+
+.thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0px 70px;
+}
+
+.programs-btn {
+  height: 60px;
+  margin-bottom: 15px;
+}

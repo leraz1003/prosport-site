@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProSport</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/registration.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu">
+                <a href="" class="logo">
+                   <img src="./images/logo-icon.svg" class="logo-icon">
+                </a>
+                <nav class="menu-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item "><a href="./index.html" class="nav-link">Головна</a></li>
+                        <li class="nav-item"><a href="./programs.html" class="nav-link">Програми</a></li>
+                        <li class="nav-item"><a href="./trainers.html" class="nav-link">Тренер</a></li>
+                        <li class="nav-item"><a href="./abonement.html" class="nav-link">Абонементи</a></li>
+                        <li class="nav-item active-page"><a href="./registration.html" class="nav-link">Запис</a></li>
+                        <li class="nav-item"><a href="./contacts.html" class="nav-link">Контакти</a></li>
+                    </ul>
+                </nav>
+                
+                <input type="checkbox" class="input-chek visually-hidden" id="switch" onclick="toggleTheme()">
+                <label for="switch" class="theme-label">
+                    <span class="input-chek-logo">
+                        <span class="circle-check"></span>
+                    </span>
+                    
+                </label>
+
+                <div class="drop-down-wrap">
+                    <button type="button" class="btn-person">
+                        <svg width="25" height="25" class="btn-person-icon"><use href="./images/symbol-defs.svg#icon-person"></use></svg>
+                        <svg width="18" height="11" class="btn-person-icon"><use href="./images/symbol-defs.svg#icon-arrow"></use></svg>
+                    </button>
+                
+                        <ul class="drop-down-list">
+                            <li class="drop-down-item"><a href="./profile.html">Особисті дані</a></li>
+                            <li class="drop-down-item"><a href="./abonement.html">Абонементи та послуги</a></li>
+                            <li class="drop-down-item"><a href="./contacts.html">Розклад тренувань</a></li>
+                            <li class="drop-down-item"><a href="">Історія тренувань</a></li>
+                            <li class="drop-down-item"><a href="">Налаштування облікового запису</a></li>
+                            <li class="drop-down-item"><a href="">Підтримка та зв'язок:</a></li>
+                            <li class="drop-down-item">
+                                <svg class="icon-log-out">
+                                     <use href="./images/symbol-defs.svg#icon-sign-out"></use>
+                                </svg>
+                                <a href="./index.html">Вихід</a>
+                            </li>
+                        </ul>
+                   
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="registration">
+            <div class="container">
+            
+                <div class="reg-thumb">
+                    <form id="registration-form" class="registration-form ">
+                        <h2 class="title registration-title">Реєстраційна форма</h2>
+                        <label for="first-name" class="registration-label" >Ім'я:</label>
+                        <input type="text" class="registration-input" id="first-name" name="first-name" pattern="^[А-ЩЬЮЯҐЄІЇа-щьюяґєіїA-Za-z']+$" title="Ім'я може містити лише літери ukr/eng" placeholder=" " required>
+    
+                        <label for="last-name" class="registration-label">Прізвище:</label>
+                        <input type="text" class="registration-input" id="last-name" name="last-name" pattern="^[А-ЩЬЮЯҐЄІЇа-щьюяґєіїA-Za-z']+$" title="Призвіще може містити лише літери ukr/eng" placeholder=" " required>
+    
+                        <label for="phone-number" class="registration-label">Номер телефону:</label>
+                        <input type="tel"  class="registration-input" id="phone-number" name="phone-number" pattern="^[0-9+]+$" title="Номер не може містити пробіл та символи крім +" minlength="10" placeholder=" " required>
+    
+                        <label for="select-program" class="registration-label">Бажаний напрямок програми:
+                            <!-- <button type="button" class="select-icon-btn">
+                            <svg class="select-icon">
+                                <use href="./images/symbol-defs.svg#icon-select-arrow_down"></use>
+                            </svg>
+                            </button> -->
+                        </label>
+                        <select id="select-program" name="program" class="select" required>
+                            <option value="" disabled selected>Виберіть програму</option>
+                            <option value="acr">Акробатика</option>  
+                            <option value="acr r-n-r">Акробатичний рок-н-рол</option>
+                            <option value="str">Стретчинг</option>
+                            <option value="choreo">Сучасна хореографія</option>
+                        </select>
+    
+                        <label for="subscription" class="registration-label">Бажаний абонемент:</label>
+                        <select id="subscription" name="subscription" class="select" required >
+                            <option value="" disabled selected>Виберіть абонемент</option>
+                            <optgroup label="Персональні тренування">
+                                <option value="child_personal">Дитячі</option>
+                                <option value="adult_personal">Дорослі</option>
+                            </optgroup>
+                            <optgroup label="Групові дорослі заняття">
+                                <option value="adult_group_one">Разове</option>
+                                <option value="adult_group_month">Місячний абонемент</option>
+                            </optgroup>
+                            <optgroup label="Групові дитячі">
+                                <option value="child_group_month">Місячний абонемент</option>
+                            </optgroup>
+                        </select>
+    
+                        <button type="submit" class="registration-btn btn">Записатись</button>
+                    </form>
+                    <div class="img-registration-thumb"><img src="./images/logo-img.png" alt="" class="img-registration"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="" class="footer-logo-link"> 
+                   <img src="./images/logo-icon.svg" class="logo-icon"> PROSport
+                </a>
+            <div class="footer-wrap">
+                <input type="email" placeholder="Email" class="footer-input" required>
+                <button type="button" class="footer-input-btn">Підписатися</button>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
