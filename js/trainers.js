@@ -17,7 +17,7 @@ const trainers = [
             "4 роки КНУ"
         ],
         dob: "10.03.1999",
-        photo: "../images/coach-valeriia.jpg"
+        photo: "./images/coach-valeriia.jpg"
     },
     {
         name: "Павлова Вікторія",
@@ -33,7 +33,7 @@ const trainers = [
             "Досвід: 6 років"
         ],
         dob: "25.02.1989",
-        photo: "../images/coach-kateryna.jpg"
+        photo: "./images/coach-kateryna.jpg"
     },
     {
         name: "Декерменджи Анна",
@@ -51,7 +51,7 @@ const trainers = [
             
         ],
         dob: "17.08.1996",
-        photo: "../images/coach-olena.jpg"
+        photo: "./images/coach-olena.jpg"
     }
     // Додайте інших тренерів якщо потрібно
 ];
