@@ -1,0 +1,341 @@
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 64px;
+    letter-spacing: 1.28px;
+  }
+  .btn {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(30 / 24); /* 125% */
+    letter-spacing: 1.44px;
+    min-width: 267px;
+    height: 81px;
+  }
+  .container {
+    max-width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* --------------------nav menu------------------------ */
+  header .container {
+    position: relative;
+  }
+  .menu {
+    justify-content: space-between;
+  }
+  .menu-nav {
+    display: block;
+    margin-left: 70px;
+  }
+
+  /* --------------------drop-down-menu------------------ */
+  .drop-down-wrap {
+    position: relative;
+    display: block;
+  }
+  .btn-person {
+    /* margin-right: 91px; */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-person-icon {
+    fill: var(--font-color);
+  }
+
+  .drop-down-list {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 300px;
+
+    transform: translateY(10%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    /* display: none; */
+  }
+  .drop-down-item {
+    background-color: #022254;
+
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: left;
+
+    border-bottom: 1px solid #999999;
+    border-radius: 5px;
+  }
+  .drop-down-item a {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0.52px;
+    color: inherit;
+
+    color: #fff;
+  }
+  .btn-person:focus + .drop-down-list {
+    opacity: 1;
+    /* display: flex; */
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .drop-down-item:is(:hover, :focus) {
+    background-color: var(--benefits-accent);
+  }
+
+  .drop-down-item:last-child {
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .drop-down-item:last-child:is(:hover, :focus) {
+    background-color: var(--hover-accent-color);
+  }
+
+  .icon-log-out {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+    fill: #ffffff;
+  }
+  /* -------------theme-------------- */
+  .theme-label {
+    margin-left: auto;
+  }
+
+  .theme-label::before {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-right: 10px;
+  }
+  .theme-label::after {
+    position: relative;
+    width: 30px;
+    height: 30px;
+
+    margin-left: 6px;
+  }
+  /* -------------hero-------------- */
+  .hero {
+    padding: 20px 0;
+    background-image: none;
+    position: relative;
+  }
+  .hero .container {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-title {
+    font-size: 96px;
+    line-height: 1.33;
+    letter-spacing: 1.92px;
+  }
+  .after-title {
+    font-size: 64px;
+  }
+  .hero-img {
+    position: relative;
+    opacity: 1;
+    left: 0;
+    transform: translateX(0);
+  }
+  /* -------------about-------------- */
+  .about {
+    padding: 0;
+  }
+  .about .container {
+    display: flex;
+    gap: 72px;
+  }
+
+  .about-wrap {
+    position: relative;
+    display: block;
+  }
+  .img-wrap {
+    display: block;
+    background-color: var(--section-color);
+    width: 496px;
+    height: 771px;
+
+    margin-left: -15px;
+  }
+  .about-desc-wrap {
+    padding-top: 70px;
+  }
+
+  .about-img {
+    width: 437px;
+    height: 771px;
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+  /* .about-title {
+    font-size: 45px;
+     margin-bottom: 46px;
+  } */
+  .about-text {
+    font-size: 26px;
+  }
+
+  .about-text-appeals {
+    margin-bottom: 78px;
+  }
+
+  /* -------------benefits-------------- */
+  .benefits {
+    padding: 67px 0 87px;
+  }
+  .benefits-title {
+    margin-bottom: 44px;
+  }
+  .benefits-list {
+    gap: 42px;
+  }
+  .benefits-item {
+    min-width: 825px;
+    height: 75.215px;
+    padding: 17px 30px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: 0.56px;
+    position: relative;
+  }
+  .benefits-icon {
+    display: block;
+  }
+
+  /* -------------program-------------- */
+  .programs {
+    padding: 70px 130px;
+  }
+  .programs-title {
+    margin-bottom: 122px;
+    text-align: right;
+  }
+  .programs-list {
+    gap: 24px;
+    margin-bottom: 84px;
+    flex-wrap: nowrap;
+  }
+  .img-thumb img {
+    width: 225px;
+    height: 225px;
+  }
+  .programs-item {
+    display: block;
+
+    width: calc((100% - 24px) / 4);
+  }
+  .desc {
+    /* width: 273px; */
+    width: 100%;
+    height: 111px;
+
+    padding: 16px 18px;
+  }
+  .desc-text {
+    font-size: 32px;
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: 0.64px;
+    word-wrap: break-word;
+  }
+  /* -------------contacts------------- */
+  .contacts {
+    padding-top: 70px;
+    padding-bottom: 31px;
+  }
+
+  .contact-data,
+  .address-data {
+    font-size: 36px;
+  }
+  .tel {
+    gap: 19px;
+  }
+  .tel-icon,
+  .metro-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .metro:is(:hover, :focus) {
+    font-weight: 400;
+  }
+  .map {
+    /* width: 934px; */
+    width: 100%;
+    height: 548px;
+  }
+
+  .social-list {
+    gap: 60px;
+  }
+  .social-media-icon {
+    width: 50px;
+    height: 50px;
+  }
+  /* -------------footer------------- */
+  .footer-input {
+    width: 312px;
+    height: 44px;
+    padding: 12px 15px;
+  }
+  .footer-input-btn {
+    min-width: 167px;
+    height: 41.75px;
+    font-size: 13px;
+  }
+  .footer-input::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+  .footer-input-btn::before {
+    width: 15px;
+    height: 15px;
+  }
+  .footer-logo-link {
+    font-size: 24px;
+  }
+  .footer-logo-link .logo-icon {
+    width: 52px;
+    height: 70px;
+  }
+  .footer {
+    padding: 20px 0;
+  }
+
+  /* -------------modal------------- */
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1360px) {
+  .img-thumb img {
+    width: 90%;
+  }
+  .programs {
+    padding: 70px;
+  }
+  .desc-text {
+    font-size: 28px;
+  }
+  .about .container {
+    gap: 20px;
+  }
+}
