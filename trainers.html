@@ -20,26 +20,59 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
     <link rel="stylesheet" href="./styles/style.css">
+    
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/tablet.css">
+    <link rel="stylesheet" href="./styles/desktop.css">
     <link rel="stylesheet" href="./styles/trainers.css">
 
 </head>
-<body>
+<body class="body">
     <header>
-        <div class="container">
+        <div class=" container ">
             <div class="menu">
                 <a href="./index.html" class="logo">
                    <img src="./images/logo-icon.svg" class="logo-icon">
                 </a>
+
+                <button type="button"  class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="mobile-menu-icon">
+                        <use class="mobile-open-icon" href="./images/symbol-defs.svg#icon-header_menu"></use>
+                    </svg>
+                </button>
+                
                 <nav class="menu-nav">
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="./index.html" class="nav-link">Головна</a></li>
+                        <li class="nav-item "><a href="./index.html" class="nav-link">Головна</a></li>
                         <li class="nav-item"><a href="./programs.html" class="nav-link">Програми</a></li>
-                        <li class="nav-item  active-page"><a href="./trainers.html" class="nav-link">Тренер</a></li>
+                        <li class="nav-item active-page"><a href="./trainers.html" class="nav-link">Тренери</a></li>
                         <li class="nav-item"><a href="./abonement.html" class="nav-link">Абонементи</a></li>
-                        <li class="nav-item"><a href="./registration.html" class="nav-link">Запис</a></li>
+                        <li class="nav-item "><a href="./registration.html" class="nav-link">Запис</a></li>
                         <li class="nav-item"><a href="./contacts.html" class="nav-link">Контакти</a></li>
                     </ul>
                 </nav>
+
+                <nav class="tablet-menu-nav">
+                    <ul class="tablet-nav-list">
+                        <li class="nav-item "><a href="./index.html" class="nav-link">Головна</a></li>
+                        <li class="nav-item"><a href="./abonement.html" class="nav-link ">Абонементи</a></li>
+                        <li class="nav-item"><a href="./programs.html" class="nav-link ">Програми</a></li>
+                        <li class="nav-item active-page"><a href="./trainers.html" class="nav-link ">Тренери</a></li>
+                    </ul>
+                </nav>
+
+                <div class="tablet-down-menu">     
+                    <ul class="tablet-down-menu-list">
+                        <li class="tablet-down-menu-item"><a href="./registration.html" class="nav-link">Запис</a></li>
+                        <li class="tablet-down-menu-item"><a href="./contacts.html" class="nav-link">Контакти</a></li>
+                    </ul>
+                    <button type="button"  class="tablet-menu-btn" >
+                        <svg class="mobile-menu-icon">
+                            <use class="mobile-open-icon open" href="./images/symbol-defs.svg#icon-header_menu"></use>
+                            <use class="mobile-open-icon close" href="./images/symbol-defs.svg#icon-close-line"></use>
+                        </svg>
+                    </button>
+                </div>
                 
                 <input type="checkbox" class="input-chek visually-hidden" id="switch" onclick="toggleTheme()">
                 <label for="switch" class="theme-label">
@@ -74,10 +107,46 @@
             </div>
         </div>
 
+        <div class="menu-container js-menu-container" id="mobile-menu">
+                <button type="button" class="menu-toggle js-close-menu">
+                    <svg class="mobile-menu-icon" xmlns="http://www.w3.org/2000/svg">
+                        <use class="mobile-close-icon" href="./images/symbol-defs.svg#icon-close-line"></use>
+                    </svg>
+                </button>
+                <div class="container">
+                        <ul class="mobile-menu">
+                            <li class="mobile-nav-item "><a href="./index.html" class="mobile-nav-link ">Головна</a></li>
+                            <li class="mobile-nav-item"><a href="./programs.html" class="mobile-nav-link">Програми</a></li>
+                            <li class="mobile-nav-item"><a href="./trainers.html" class="mobile-nav-link active-page">Тренери</a></li>
+                            <li class="mobile-nav-item"><a href="./abonement.html" class="mobile-nav-link">Абонементи</a></li>
+                            <li class="mobile-nav-item"><a href="./registration.html" class="mobile-nav-link">Запис</a></li>
+                            <li class="mobile-nav-item"><a href="./contacts.html" class="mobile-nav-link">Контакти</a></li>
+                        </ul>
+                 
+                    <div class="contact-mob-wrap">
+                        <a href="tel:+380992795024" class="mobile-contact-data">+38(099) 279 50 24</a>
+                        <a href="mailto:prosport.club.kyiv@gmail.com" class="mobile-contact-data">prosport.club.kyiv@gmail.com</a>
+                    </div>
+                </div>
+                        
+        </div>
+        
     </header>
     <main>
         <section class="trainers">
             <div class="container">
+                
+                <div class="mobile-coach-contant">
+                    <h2 class="coach-title">Тренер</h2>
+                    
+                        <img src="./images/coach-valeriia.jpg" class="coach-photo">
+                  
+                     <div class="coach-data">
+                        <h3 class="coach-full-name">Зубрицька Валерія Дмитрівна</h3>
+                        <p class="coach-birthday">10.03.1999</p>
+                    </div>
+                </div>
+
                 <div class="trainers-desc">
                     <h3 class="trainers-desc-title">Досягненння:</h3>
                     <ul class="achievements">
@@ -100,13 +169,19 @@
                         <li class="trainers-text">4 роки КНУ</li>
                     </ul>
                 </div>
+                
+                <button type="button" class="mobile-switch-btn" id="switchBtn"> Наступний
+                    <svg class="right-arrow-icon">
+                       <use href="./images/symbol-defs.svg#icon-right_arrow"></use>
+                    </svg>
+                </button>
 
 
                 <div class="treiners-data">
                     <h2 class="coach-title">Тренер</h2>
-                    <div class="coach-photo-thumb">
+                    
                         <img src="./images/coach-valeriia.jpg" class="coach-photo">
-                    </div>
+                   
                     <div class="coach-data">
                         <h3 class="coach-full-name">Зубрицька Валерія Дмитрівна</h3>
                         <p class="coach-birthday">10.03.1999</p>
@@ -137,5 +212,8 @@
     </script>
     <script src="./js/trainers.js"></script>
     <script src="./js/theme.js"></script>
+    <script src="https://unpkg.com/body-scroll-lock"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="js/tablet-menu.js"></script>
     </body>
 </html>

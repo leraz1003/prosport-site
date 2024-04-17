@@ -10,7 +10,7 @@ const trainers = [
         ],
         education: [
             "КНУ імені Т.Г.Шевченка. Факультет радіофізики, електроніки та комп’ютерних систем.Н",
-            "Національний університет фізичного виховання та спорту України.Фахівець з тренерської діяльності."
+            "Національний університет фізичного виховання та спорту України.Фахівець з Тренериської діяльності."
         ],
         experience: [
             "5 років БДЮТ",
@@ -53,7 +53,7 @@ const trainers = [
         dob: "17.08.1996",
         photo: "./images/coach-olena.jpg"
     }
-    // Додайте інших тренерів якщо потрібно
+    // Додайте інших Тренериів якщо потрібно
 ];
 
 let currentTrainerIndex = 0;
@@ -61,9 +61,19 @@ let currentTrainerIndex = 0;
 function changeTrainer() {
     const currentTrainer = trainers[currentTrainerIndex];
 
-    document.querySelector(".coach-full-name").textContent = currentTrainer.name;
-    document.querySelector(".coach-birthday").textContent = currentTrainer.dob;
-    document.querySelector(".coach-photo").src = currentTrainer.photo;
+    // Зміна інформації для мобільної версії
+    const mobileCoachContent = document.querySelector(".mobile-coach-contant");
+    mobileCoachContent.querySelector(".coach-full-name").textContent = currentTrainer.name;
+    mobileCoachContent.querySelector(".coach-birthday").textContent = currentTrainer.dob;
+    mobileCoachContent.querySelector(".coach-photo").src = currentTrainer.photo;
+
+    // Зміна інформації для інших версій
+    const otherVersionTrainersData = document.querySelectorAll(".treiners-data");
+    otherVersionTrainersData.forEach(data => {
+        data.querySelector(".coach-full-name").textContent = currentTrainer.name;
+        data.querySelector(".coach-birthday").textContent = currentTrainer.dob;
+        data.querySelector(".coach-photo").src = currentTrainer.photo;
+    });
 
     // Зміна досягнень
     const achievementsList = document.querySelector(".achievements");
@@ -96,9 +106,17 @@ function changeTrainer() {
     });
 }
 
-document.getElementById("switchBtn").addEventListener('click', function() {
-    currentTrainerIndex = (currentTrainerIndex + 1) % trainers.length;
-    changeTrainer();
+
+
+// Замінюємо document.getElementById на document.querySelectorAll
+const switchButtons = document.querySelectorAll("#switchBtn");
+
+// Додаємо обробник події для кожної кнопки
+switchButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        currentTrainerIndex = (currentTrainerIndex + 1) % trainers.length;
+        changeTrainer();
+    });
 });
 
 changeTrainer();
