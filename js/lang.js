@@ -5,7 +5,7 @@ let data = {
     ukrainian: {
         main: "Головна",
         program_page: "Програми",
-        trainers_page: "Тренерии",
+        trainers_page: "Тренери",
         abonement_page: "Абонементи",
         registration_page: "Запис",
         contacts_page: "Контакти",

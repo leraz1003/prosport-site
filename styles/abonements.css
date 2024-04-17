@@ -108,37 +108,34 @@
 }
 @media screen and (min-width: 768px) {
   .abonements {
-    padding: 15px 0px;
+    padding: 18px 0px;
   }
   .abonement-title {
     font-size: 24px;
     margin-bottom: 25px;
   }
 
-  .abonemets-list {
-    flex-direction: row;
-    justify-content: space-between;
-  }
   .abonemets-item {
     width: 100%;
-    max-width: 230px;
+    max-width: 258px;
   }
+
   .upper-thumb {
-    padding: 15px 5px;
+    padding: 15px 10px;
   }
   .upper-thumb div {
-    width: 180px;
+    width: 230px;
     height: 80px;
   }
 
   .info-thumb {
     padding: 20px 10px;
 
-    height: 280px;
+    height: 255px;
   }
   .abon-title,
   .abon-info {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .abon-title::after {
@@ -167,35 +164,26 @@
 
 @media screen and (min-width: 1024px) {
   .abonements {
-    padding: 8px 50px 15px;
-  }
-  .abonemets-item {
-    width: 100%;
-    max-width: 258px;
-  }
-  .abonement-title {
-    margin-bottom: 23px;
+    padding: 45px 50px 67px;
   }
   .abonemets-list {
+    flex-direction: row;
     justify-content: center;
     gap: 40px;
   }
-  .upper-thumb {
-    padding: 15px 10px;
+
+  .abonement-title {
+    margin-bottom: 23px;
   }
+
   .upper-thumb div {
-    width: 230px;
     height: 100px;
   }
   .info-thumb {
-    width: 250px;
     height: 255px;
   }
-  .abon-title,
-  .abon-info {
-    font-size: 18px;
-  }
+
   footer.footer {
-    padding: 10px 0;
+    padding: 20px 0;
   }
 }

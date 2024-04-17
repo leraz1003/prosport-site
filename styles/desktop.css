@@ -125,6 +125,10 @@
     height: 30px;
 
     margin-left: 6px;
+    transition: none;
+  }
+  .input-chek:checked + .theme-label.theme-label::after {
+    opacity: 1;
   }
   /* -------------hero-------------- */
   .hero {

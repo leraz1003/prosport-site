@@ -1,5 +1,3 @@
-@media screen and (min-width: 250px) {
-}
 @media screen and (max-width: 767px) {
   .header {
     position: relative;
@@ -69,6 +67,9 @@
     line-height: calc(25 / 18);
     letter-spacing: 0.1em;
     color: var(--font-color);
+  }
+  .mobile-contact-data {
+    font-size: 14px;
   }
 
   .contact-mob-wrap {

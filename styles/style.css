@@ -6,7 +6,13 @@
     #000d22 100%
   );
   --section-color: #ffff;
-  --pages-color: linear-gradient(to bottom, #ffffff 0%, #fff7f6 100%);
+  --pages-color: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #fff7f6 70%,
+    #ffffff 100%
+  );
+
   --font-color: #022254;
   --accent-color: #ff3533;
   --hover-accent-color: #e10602;
@@ -16,6 +22,8 @@
   --profile-text: rgb(47, 47, 55);
   --profile-link: rgb(41, 121, 255);
   --profile-accent: rgb(226, 229, 232);
+  --bg-tablet-down-menu-item: rgb(248, 248, 248);
+  --border-tablet-down-menu-item: rgb(215, 215, 215);
 }
 /* Dark theme */
 [data-theme="dark"] {
@@ -33,6 +41,8 @@
   --profile-text: rgb(224, 224, 250);
   --profile-link: rgb(200, 225, 255);
   --profile-accent: rgb(122, 122, 122);
+  --bg-tablet-down-menu-item: rgb(138, 138, 138);
+  --border-tablet-down-menu-item: rgb(111, 111, 111);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -51,6 +61,8 @@
     --profile-text: rgb(224, 224, 250);
     --profile-link: rgb(200, 225, 255);
     --profile-accent: rgb(122, 122, 122);
+    --bg-tablet-down-menu-item: rgb(138, 138, 138);
+    --border-tablet-down-menu-item: rgb(111, 111, 111);
   }
 }
 
