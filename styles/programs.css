@@ -7,6 +7,7 @@
     padding: 16px 50px;
     /* background-color: var(--section-color); */
     background: var(--pages-color);
+    height: 100%;
   }
   .programs-title {
     color: var(--font-color);
@@ -66,6 +67,12 @@
   }
 }
 @media screen and (min-width: 1024px) {
+  body {
+    position: relative;
+  }
+  .programs {
+    height: 100vh;
+  }
   .programs-list {
     margin-bottom: 30px;
   }
@@ -73,6 +80,10 @@
     max-width: 252px;
   }
   .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #022254;
     padding: 14px 0;
   }
 }

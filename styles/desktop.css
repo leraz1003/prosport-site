@@ -35,12 +35,15 @@
   }
   .btn-person {
     /* margin-right: 91px; */
+    width: 60px;
+    height: 30px;
     background-color: transparent;
     border: none;
     cursor: pointer;
   }
   .btn-person-icon {
     fill: var(--font-color);
+    pointer-events: none;
   }
 
   .drop-down-list {
