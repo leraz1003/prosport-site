@@ -2,7 +2,6 @@
   .abonements {
     padding: 15px 0;
     background: var(--pages-color);
-    height: 100vh;
   }
   .abonement-title {
     color: var(--font-color);
