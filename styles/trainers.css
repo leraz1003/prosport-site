@@ -210,20 +210,44 @@
   .btn-person-icon {
     fill: #fff;
   }
+  .trainers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* Розтягнути елементи по вертикалі */
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(224, 234, 255);
+  }
+  .trainers .container {
+    gap: 48px;
+  }
+
   .trainers-desc {
-    width: 600px;
-    height: 100%;
+    display: block;
+    margin: 0;
+    font-size: 24px;
   }
 
   .trainers-text,
   .trainers-desc-title {
-    font-size: 18px;
+    font-size: 24px;
+  }
+  .trainers-desc-title {
+    font-size: 32px;
+    margin-bottom: 8px;
   }
   .treiners-data {
     width: 300px;
     padding: 38px 15px 45px;
-    height: 560px;
   }
+  .trainers-desc {
+    width: 50%;
+
+    /* height: 100%; */
+    text-align: left;
+  }
+
   .coach-photo {
     width: 200px;
     height: 260px;

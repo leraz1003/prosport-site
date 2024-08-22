@@ -103,6 +103,7 @@
 @media screen and (min-width: 1024px) {
   .contacts {
     padding: 57px 50px;
+    height: 100vh;
   }
   .contscts-wrap {
     display: flex;
